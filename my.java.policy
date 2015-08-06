@@ -1,0 +1,7 @@
+/*
+ * Grants all permission to the entire JVM
+ */
+
+grant {
+    permission java.security.AllPermission;
+};
