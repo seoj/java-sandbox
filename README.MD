@@ -13,6 +13,8 @@ Read the comments under the Main.java for more details.
 
 # Synopsis
 
+## The SecurityManager
+
 Java applications have the ability to run under a security manager by using JVM arguments
 
     -Djava.security.manager -Djava.security.policy=path/to/policy/file
@@ -26,3 +28,7 @@ Which should not be null.
 The security policy file is a specially formatted file containing permissions granted under this security manager.
 
 You can file more about it in the official Java documentation http://docs.oracle.com/javase/7/docs/technotes/guides/security/PolicyFiles.html
+
+## AccessController.doPrivileged()
+
+To run statements under a sandbox mode, you must run you code using the AccessController.doPrivileged() method, which allows you to execute with restricted permissions. Full code example is in the Main.java provided.
